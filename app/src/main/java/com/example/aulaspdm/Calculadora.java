@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Menu extends AppCompatActivity {
-    Button buttonIrCadastro;
+public class Calculadora extends AppCompatActivity {
+    Button voltarDaCalculadora;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.Calculadora_tela);
 
-        buttonIrCadastro = findViewById(R.id.buttonIrCadastro);
+        voltarDaCalculadora = findViewById(R.id.voltarDaCalculadora);
 
-        buttonIrCadastro.setOnClickListener(new View.OnClickListener() {
+        voltarDaCalculadora.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent in = new Intent(Menu.this, Cadastro.class);
+                Intent in = new Intent(Calculadora.this, Calculadora.class);
 
                 startActivity(in);
 
 
             }
         });}}
-
-
