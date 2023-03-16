@@ -6,23 +6,49 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Calculadora extends AppCompatActivity {
     Button voltarDaCalculadora;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Calculadora_tela);
+        setContentView(R.layout.calculadora_tela);
+    }
 
-        voltarDaCalculadora = findViewById(R.id.voltarDaCalculadora);
+    public void add(View v){
+        EditText et1 =(EditText)findViewById(R.id.numero1);
+        EditText et2 =(EditText)findViewById(R.id.numero2);
+        EditText et3 =(EditText)findViewById(R.id.resultado);
 
-        voltarDaCalculadora.setOnClickListener(new View.OnClickListener() {
+        int n1 = Integer.parseInt(et1.getText().toString());
+        int n2 = Integer.parseInt(et1.getText().toString());
+        int result = n1+n2;
 
-            public void onClick(View view) {
-                Intent in = new Intent(Calculadora.this, Calculadora.class);
+        et3.setText(result);
+    }
 
-                startActivity(in);
+    public void menos(View v){
+        EditText et1 =(EditText)findViewById(R.id.numero1);
+        EditText et2 =(EditText)findViewById(R.id.numero2);
+        EditText et3 =(EditText)findViewById(R.id.resultado);
 
+        int n1 = Integer.parseInt(et1.getText().toString());
+        int n2 = Integer.parseInt(et1.getText().toString());
+        int result = n1-n2;
 
-            }
-        });}}
+        et3.setText(result);
+    }
+    /*public void add(View v){
+        EditText et1 =(EditText)findViewById(R.id.numero1);
+        EditText et2 =(EditText)findViewById(R.id.numero2);
+        EditText et3 =(EditText)findViewById(R.id.resultado);
+
+        int n1 = Integer.parseInt(et1.getText().toString());
+        int n2 = Integer.parseInt(et1.getText().toString());
+        int result = n1+n2;
+
+        et3.setText(result);
+    }*/
+
+    }
