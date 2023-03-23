@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.679" />
 
     <Button
-        android:id="@+id/Multiplicacao"
+        android:id="@+id/Multi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="x"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.811" />
 
     <EditText
-        android:id="@+id/numero1"
+        android:id="@+id/et1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -58,20 +58,20 @@
         app:layout_constraintVertical_bias="0.17" />
 
     <EditText
-        android:id="@+id/numero2"
+        android:id="@+id/et2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/et3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero1"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
         app:layout_constraintVertical_bias="0.478" />
 
     <EditText
-        android:id="@+id/resultado"
+        android:id="@+id/et3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numero1"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
         app:layout_constraintVertical_bias="0.002" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
